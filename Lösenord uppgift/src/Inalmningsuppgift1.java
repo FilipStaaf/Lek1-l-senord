@@ -7,11 +7,11 @@ public class Inalmningsuppgift1
 	public static void main(String[] args) 
 	{
 		// a variable that sets a value of 3, which will be used for setting a limit of attempts.
-		final int TotalTryes = 3;
+		final int TotalTries = 3;
 		// a boolean for the for loop later used.
 		boolean succes = false;
 		// a for loop that counts the inputs attempts done by the user.
-		for (int Tryes = 1; Tryes <= TotalTryes && !succes; Tryes++) 
+		for (int Tries = 1; Tries <= TotalTries && !succes; Tries++) 
 		{
 			System.out.print("Write your password:");
 			// method for reading the user's inputs and saving the input as a value in a variable.
@@ -23,7 +23,7 @@ public class Inalmningsuppgift1
 			 */
 			if (!(PwTry.equals("kennypowers"))) 
 			{
-				System.out.println("Wrong password, please try again!\t" + "\n" + ((Tryes - TotalTryes) * (-1)) + " "
+				System.out.println("Wrong password, please try again!\t" + "\n" + ((Tries - TotalTries) * (-1)) + " "
 						+ "Attempts remaining");
 			} else 
 			{
